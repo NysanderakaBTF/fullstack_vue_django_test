@@ -79,22 +79,22 @@ WSGI_APPLICATION = 'spacexmp.wsgi.application'
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
 DATABASES = {
-    # 'default': {
-    #     'ENGINE': 'django.db.backends.postgresql_psycopg2',
-    #     'NAME': os.getenv("POSTGRES_DB"),
-    #     'USER': os.getenv("POSTGRES_USER"),
-    #     'PASSWORD': os.getenv("POSTGRES_PASSWORD"),
-    #     'HOST': os.getenv('POSTGRES_HOST'),
-    #     'PORT': os.getenv('POSTGRES_PORT')
-    # }
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'space',
-        'USER': "Fox",
-        'PASSWORD': "123",
-        'HOST': "localhost",
-        'PORT': "5432"
-    }
+     'default': {
+     'ENGINE': 'django.db.backends.postgresql_psycopg2',
+         'NAME': os.getenv("POSTGRES_DB"),
+         'USER': os.getenv("POSTGRES_USER"),
+         'PASSWORD': os.getenv("POSTGRES_PASSWORD"),
+         'HOST': os.getenv('POSTGRES_HOST'),
+         'PORT': os.getenv('POSTGRES_PORT')
+     }
+    #'default': {
+    #    'ENGINE': 'django.db.backends.postgresql_psycopg2',
+    #    'NAME': 'space',
+    #    'USER': "Fox",
+    #    'PASSWORD': "123",
+    #    'HOST': "localhost",
+    #    'PORT': "5432"
+    #}
 }
 
 # Password validation
